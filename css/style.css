@@ -30,3 +30,49 @@ header{
     font-weight: bold;
     font-size: 14px;
 }
+.container-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: radial-gradient(white, slategrey);
+}
+.activated{
+    color: darkcyan;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    padding: 3px 4px;
+}
+fieldset, label{
+    padding: 20px;
+}
+legend{
+    color: darkcyan;
+    font-size: 32px;
+}
+fieldset{
+    border: 5px solid darkgrey;
+    border-radius: 20px;
+}
+input{
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius:20px;
+    outline: none;
+    border: 2px solid black;
+}
+#submit{
+    float: right;
+    padding:3px;
+    border-radius: 8px;
+    background: darkcyan;
+    color: white;
+    cursor: pointer;
+    border: 2px solid darkcyan;
+    transition: background 1s;
+}
+#submit:hover{
+    color: darkcyan;
+    background: white;
+}
