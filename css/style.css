@@ -4,45 +4,14 @@
     box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
 }
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: aliceblue;
-}
-.logo-name{
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 30px;
-}
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-.nav-links li{
-    list-style: none;
-}
-.nav-links a{
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-}
-.container-body{
+.container-body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
     background: radial-gradient(white, slategrey);
 }
-.activated{
-    color: darkcyan;
-    border: 2px solid darkcyan;
-    border-radius: 10px;
-    padding: 3px 4px;
-}
+
 fieldset, label{
     padding: 20px;
 }
@@ -75,62 +44,4 @@ input{
 #submit:hover{
     color: darkcyan;
     background: white;
-}
-.burger{
-    display: none;
-    cursor: pointer;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: darkcyan;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1024px){
-    .nav-links{
-        width: 60%;
-    }
-}
-@media screen and (max-width: 370px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0;
-        height: 80vh;
-        top: 100px;
-        background-color: aliceblue;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        display: none;
-        transition: transform 0.5s ease-in;
-    }
-    .burger{
-        display: block;
-        margin-right: 10px;
-    }
-    img{
-        width: 100px;
-        height: 100px;
-    }
-    h4{
-        font-size: 20px;
-    }
-}
-.nav-active{
-    display: flex;
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
 }
