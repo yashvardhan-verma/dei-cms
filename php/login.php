@@ -13,15 +13,7 @@ if(!$con){
 $roll_no = mysqli_real_escape_string($con, $_POST['username']);
 $dob = mysqli_real_escape_string($con, $_POST['password']);
 
-
-if (DB_SERVER == 'localhost')
-{
-    $sql = "SELECT roll_no, dob FROM development.login_cred WHERE roll_no = '$roll_no' and dob = '$dob'";
-
-}else{
-    $sql = "SELECT roll_no, dob FROM Rc1TptrQqu.login_cred WHERE roll_no = '$roll_no' and dob = '$dob'";
-
-}
+$sql = "SELECT roll_no, dob FROM Rc1TptrQqu.login_cred WHERE roll_no = '$roll_no' and dob = '$dob'";
 
 $result = $con->query($sql);
 
