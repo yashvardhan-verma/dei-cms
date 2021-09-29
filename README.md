@@ -1,1 +1,1 @@
-# Dayalbagh Educational institute Course Management System
+# Dayalbagh Educational Institute Course Management System
